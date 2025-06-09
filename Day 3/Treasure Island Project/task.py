@@ -30,10 +30,10 @@ choice_1 = input("You can go left or right.\nWhich direction would you like to g
 
 if choice_1 == "l":
     choice_2 = input("You are at a river.\nYou can swim or wait for a boat."
-                     "\nType swim or wait\n")
+                     "\nType swim or wait\n").lower()
     if choice_2 == "wait":
         choice_3 = input("The boat took you to a castle.\n"
-                         "There are three doors.\nChoose red, yellow, or blue\n")
+                         "There are three doors.\nChoose red, yellow, or blue\n").lower()
         if choice_3 == "red":
             print("You were burned by fire. You are dead.")
         elif choice_3 == "blue":
