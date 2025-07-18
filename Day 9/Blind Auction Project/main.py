@@ -21,7 +21,7 @@ while continue_bidding:
     # TODO-2: Save data into dictionary {name: price}
     bids[name] = price
     # TODO-3: Whether if new bids need to be added
-    should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n")
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
     if should_continue == 'no':
         continue_bidding = False
         find_highest_bidder(bids)
