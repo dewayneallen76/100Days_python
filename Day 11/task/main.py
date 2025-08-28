@@ -1,6 +1,5 @@
 import random
-
-import art
+from art import logo
 
 def deal_card():
     # Returns a random card from the deck
@@ -9,6 +8,7 @@ def deal_card():
     return card
 
 def calculate_score(cards):
+    # Calculate score
     if sum(cards) == 21 and len(cards) ==2:
         return 0
 
